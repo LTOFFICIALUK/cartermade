@@ -1,0 +1,35 @@
+---
+description: CarterMade studio site — brand and build context
+alwaysApply: true
+---
+
+# CarterMade
+
+Read `BRIEF.md` in this folder first. It overrides generic assumptions.
+
+## Client
+
+- **Business**: CarterMade
+- **Industry**: Web design & development for small local businesses
+- **Location**: UK-wide
+- **Site folder**: `clients/carter-made/`
+- **Domain**: https://cartermade.co.uk
+
+## Build focus
+
+Phase 2–3: scaffold + atelier design system + core pages (Home, Work, Approach, About, Contact).
+
+## Must respect
+
+- **Atelier brand** — walnut / ivory / brass. Craft feel, modern execution. Not café-rustic, not purple SaaS.
+- **Wordmark-first** — “CarterMade” is a hero-level signal on branded pages
+- **Primary CTA** — WhatsApp (`wa.me/447375388796`), label like “Message on WhatsApp”
+- **Secondary** — luke@cartermade.co.uk
+- Pages listed in `BRIEF.md` only — ask before adding new routes
+- Portfolio proof: Cassia, Benza, Big Dragons, Polyblock, Successful Streamer
+- Motion: subtle, coordinated, `prefers-reduced-motion` safe — no gimmicks
+- This is a **studio portfolio**, not a local-business site — skip hero map / local GEO homepage patterns from client-websites rules unless BRIEF says otherwise
+
+## Portal
+
+Track todos in client-portal when the website record exists. Use checklist Cursor prompts for SEO / GSC / GA4 later.
