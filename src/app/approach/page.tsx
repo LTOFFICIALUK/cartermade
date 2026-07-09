@@ -1,4 +1,5 @@
 import { APPROACH_STEPS } from "@/lib/constants";
+import { PageSection, PageShell } from "@/components/layout/PageShell";
 import { Reveal } from "@/components/ui/Reveal";
 import { HomeCta } from "@/components/home/Sections";
 import { buildPageMetadata } from "@/lib/metadata";
@@ -13,8 +14,8 @@ export const metadata = buildPageMetadata({
 export default function ApproachPage() {
   return (
     <>
-      <section className="grain bg-ivory px-5 pb-16 pt-28 sm:px-8 sm:pb-20 sm:pt-36">
-        <div className="mx-auto max-w-6xl">
+      <PageShell>
+        <PageSection withCtaBelow>
           <Reveal>
             <p className="text-xs font-medium uppercase tracking-[0.2em] text-walnut/70">
               Approach
@@ -23,7 +24,7 @@ export default function ApproachPage() {
               A calm process. A sharp result.
             </h1>
             <p className="mt-5 max-w-xl text-base leading-relaxed text-charcoal/75">
-              No mystery. No endless decks. We agree what “done” looks like,
+              No mystery. No endless decks. We agree what &ldquo;done&rdquo; looks like,
               then build toward it — one phase at a time.
             </p>
           </Reveal>
@@ -45,8 +46,8 @@ export default function ApproachPage() {
               </Reveal>
             ))}
           </ol>
-        </div>
-      </section>
+        </PageSection>
+      </PageShell>
       <HomeCta />
     </>
   );

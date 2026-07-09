@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { PageSection, PageShell } from "@/components/layout/PageShell";
 import { Reveal } from "@/components/ui/Reveal";
 import { buildPageMetadata } from "@/lib/metadata";
 import { BUSINESS } from "@/lib/constants";
@@ -11,8 +12,8 @@ export const metadata = buildPageMetadata({
 
 export default function CookiesPage() {
   return (
-    <section className="bg-ivory px-5 pb-20 pt-28 sm:px-8 sm:pb-28 sm:pt-36">
-      <div className="mx-auto max-w-2xl">
+    <PageShell grain={false}>
+      <PageSection narrow>
         <Reveal>
           <h1 className="font-display text-4xl tracking-tight text-espresso">
             Cookie policy
@@ -46,7 +47,7 @@ export default function CookiesPage() {
             </p>
           </div>
         </Reveal>
-      </div>
-    </section>
+      </PageSection>
+    </PageShell>
   );
 }

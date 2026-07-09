@@ -1,4 +1,5 @@
 import { BUSINESS } from "@/lib/constants";
+import { PageSection, PageShell } from "@/components/layout/PageShell";
 import { Reveal } from "@/components/ui/Reveal";
 import { WhatsAppButton } from "@/components/ui/WhatsAppButton";
 import { HomeCta } from "@/components/home/Sections";
@@ -14,8 +15,8 @@ export const metadata = buildPageMetadata({
 export default function AboutPage() {
   return (
     <>
-      <section className="grain bg-ivory px-5 pb-16 pt-28 sm:px-8 sm:pb-24 sm:pt-36">
-        <div className="mx-auto max-w-6xl">
+      <PageShell>
+        <PageSection withCtaBelow>
           <div className="grid gap-12 lg:grid-cols-12 lg:gap-16">
             <Reveal className="lg:col-span-5">
               <p className="text-xs font-medium uppercase tracking-[0.2em] text-walnut/70">
@@ -58,8 +59,8 @@ export default function AboutPage() {
               </Reveal>
             </div>
           </div>
-        </div>
-      </section>
+        </PageSection>
+      </PageShell>
       <HomeCta />
     </>
   );

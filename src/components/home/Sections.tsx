@@ -6,7 +6,7 @@ import { ProjectShowcase } from "@/components/home/ProjectShowcase";
 import Link from "next/link";
 
 export const HomeServices = () => (
-  <section className="border-y border-walnut/10 bg-parchment px-5 py-20 sm:px-8 sm:py-24">
+  <section className="border-y border-walnut/10 bg-parchment px-5 py-24 sm:px-8 sm:py-32">
     <div className="mx-auto max-w-6xl">
       <Reveal>
         <p className="text-xs font-medium uppercase tracking-[0.2em] text-walnut/70">
@@ -35,7 +35,7 @@ export const HomeServices = () => (
 );
 
 export const HomeWork = () => (
-  <section className="bg-ivory px-5 py-20 sm:px-8 sm:py-28">
+  <section className="bg-ivory px-5 py-24 sm:px-8 sm:py-32">
     <div className="mx-auto max-w-6xl">
       <Reveal>
         <p className="text-xs font-medium uppercase tracking-[0.2em] text-walnut/70">
@@ -57,7 +57,7 @@ export const HomeWork = () => (
 );
 
 export const HomeFor = () => (
-  <section className="grain border-y border-walnut/10 bg-parchment px-5 py-20 sm:px-8 sm:py-28">
+  <section className="grain border-y border-walnut/10 bg-parchment px-5 py-24 sm:px-8 sm:py-32">
     <div className="mx-auto max-w-6xl">
       <div className="grid gap-12 lg:grid-cols-12 lg:gap-16">
         <Reveal className="lg:col-span-5">
@@ -101,7 +101,7 @@ export const HomeFor = () => (
 );
 
 export const HomeWhy = () => (
-  <section className="bg-espresso px-5 py-20 text-ivory sm:px-8 sm:py-28">
+  <section className="bg-espresso px-5 py-24 text-ivory sm:px-8 sm:py-32">
     <div className="mx-auto max-w-6xl">
       <Reveal>
         <p className="text-xs font-medium uppercase tracking-[0.2em] text-brass/80">
@@ -141,7 +141,7 @@ export const HomeWhy = () => (
 );
 
 export const HomeProcess = () => (
-  <section className="bg-ivory px-5 py-20 sm:px-8 sm:py-28">
+  <section className="bg-ivory px-5 py-24 sm:px-8 sm:py-32">
     <div className="mx-auto max-w-6xl">
       <div className="flex flex-col gap-6 sm:flex-row sm:items-end sm:justify-between">
         <Reveal>
@@ -180,7 +180,7 @@ export const HomeProcess = () => (
 );
 
 export const HomeCta = () => (
-  <section className="grain border-t border-walnut/10 bg-parchment px-5 py-20 sm:px-8 sm:py-24">
+  <section className="grain border-t border-walnut/10 bg-parchment px-5 py-24 sm:px-8 sm:py-32">
     <div className="mx-auto max-w-3xl text-center">
       <Reveal>
         <h2 className="font-display text-3xl tracking-tight text-espresso sm:text-4xl">

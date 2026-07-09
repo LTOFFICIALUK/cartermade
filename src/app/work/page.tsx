@@ -1,4 +1,5 @@
 import { ProjectShowcase } from "@/components/home/ProjectShowcase";
+import { PageSection, PageShell } from "@/components/layout/PageShell";
 import { HomeCta } from "@/components/home/Sections";
 import { Reveal } from "@/components/ui/Reveal";
 import { buildPageMetadata } from "@/lib/metadata";
@@ -13,8 +14,8 @@ export const metadata = buildPageMetadata({
 export default function WorkPage() {
   return (
     <>
-      <section className="grain bg-ivory px-5 pb-16 pt-28 sm:px-8 sm:pb-20 sm:pt-36">
-        <div className="mx-auto max-w-6xl">
+      <PageShell>
+        <PageSection withCtaBelow>
           <Reveal>
             <p className="text-xs font-medium uppercase tracking-[0.2em] text-walnut/70">
               Work
@@ -30,8 +31,8 @@ export default function WorkPage() {
           <div className="mt-16">
             <ProjectShowcase showFilters />
           </div>
-        </div>
-      </section>
+        </PageSection>
+      </PageShell>
       <HomeCta />
     </>
   );

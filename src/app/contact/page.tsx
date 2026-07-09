@@ -1,4 +1,5 @@
 import { BUSINESS } from "@/lib/constants";
+import { PageSection, PageShell } from "@/components/layout/PageShell";
 import { Reveal } from "@/components/ui/Reveal";
 import { WhatsAppButton, WhatsAppIcon } from "@/components/ui/WhatsAppButton";
 import { Mail, Phone } from "lucide-react";
@@ -13,19 +14,19 @@ export const metadata = buildPageMetadata({
 
 export default function ContactPage() {
   return (
-    <section className="grain min-h-[80svh] bg-ivory px-5 pb-20 pt-28 sm:px-8 sm:pb-28 sm:pt-36">
-      <div className="mx-auto max-w-6xl">
+    <PageShell>
+      <PageSection>
         <div className="grid gap-14 lg:grid-cols-12 lg:gap-16">
           <Reveal className="lg:col-span-6">
             <p className="text-xs font-medium uppercase tracking-[0.2em] text-walnut/70">
               Contact
             </p>
             <h1 className="mt-3 font-display text-4xl tracking-tight text-espresso sm:text-5xl">
-              Let’s talk about your site.
+              Let&apos;s talk about your site.
             </h1>
             <p className="mt-5 max-w-md text-base leading-relaxed text-charcoal/75">
               WhatsApp is the quickest way. Tell me what you do, who you serve,
-              and what you need the site to achieve — I’ll come back with clear
+              and what you need the site to achieve — I&apos;ll come back with clear
               next steps.
             </p>
             <div className="mt-8">
@@ -34,7 +35,7 @@ export default function ContactPage() {
           </Reveal>
 
           <Reveal delayMs={120} className="lg:col-span-5 lg:col-start-8">
-            <ul className="space-y-6 border-t border-walnut/15 pt-8">
+            <ul className="space-y-6 border-t border-walnut/15 pt-8 lg:pt-0 lg:border-t-0">
               <li>
                 <a
                   href={BUSINESS.whatsapp}
@@ -100,7 +101,7 @@ export default function ContactPage() {
             </p>
           </Reveal>
         </div>
-      </div>
-    </section>
+      </PageSection>
+    </PageShell>
   );
 }
